@@ -1,38 +1,168 @@
-.App {
-  text-align: center;
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+header {
+  position: fixed;
+  background: transparent;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 4rem;
+  z-index: 1997;
+}
+header.scrolled {
+  background-color: #000000;
+  z-index: 100;
+}
+header .logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header .logo img {
+  width: 8.5rem;
+}
+header .headerRight {
+  display: flex !important;
+  justify-content: flex-end;
+  margin-top: -3.6rem;
+}
+header .headerRight ul.social {
+  display: flex !important;
+  list-style: none;
+}
+header .headerRight ul.social li {
+  margin: 1rem 1rem 0 0;
+}
+header .headerRight ul.social li a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: transparent;
+  border-radius: 1.5rem;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+header .headerRight ul.social li a span {
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  transform: translateY(-50%);
+}
+header .headerRight ul.social li a i {
+  position: absolute;
+}
+header .headerRight ul.social li a.btn-clientes {
+  background-color: #F1880d;
+  border-radius: 1.5rem;
+  width: 17rem;
+}
+header .headerRight ul.social li a.btn-clientes i {
+  top: 0.4rem;
+  left: 0.6rem;
+}
+header .headerRight ul.social li a.btn-clientes span {
+  left: 2.3rem;
+}
+header .headerRight ul.social li a.btn-clientes:hover {
+  background-color: #000000;
+  border: 0;
+}
+header .headerRight ul.social li a.telefono {
+  background-color: #F1880d;
+  border-radius: 1.5rem;
+  width: 8.5rem;
+}
+header .headerRight ul.social li a.telefono i {
+  top: 0.4rem;
+  left: 0.7rem;
+}
+header .headerRight ul.social li a.telefono span {
+  left: 2.3rem;
+}
+header .headerRight ul.social li a.telefono:hover {
+  background-color: #000000;
+  border: 0;
+}
+header .headerRight ul.social li a.consulta i {
+  top: 0.4rem;
+  left: 0.5rem;
+}
+header .headerRight ul.social li a.consulta:hover {
+  width: 9.3rem;
+  background-color: #F1880d;
+}
+header .headerRight ul.social li a.email i {
+  top: 52%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+}
+header .headerRight ul.social li a.email:hover {
+  background-color: #636363;
+}
+header .headerRight ul.social li a.instagram i {
+  top: 52%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+}
+header .headerRight ul.social li a.instagram:hover {
+  background-color: #8a3ab9;
+}
+header .headerRight ul.social li a.twitter i {
+  top: 52%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+}
+header .headerRight ul.social li a.twitter:hover {
+  background-color: #0879A8;
+}
+header .headerRight ul.social li a.youtube i {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header .headerRight ul.social li a.youtube:hover {
+  background-color: #ff0000;
+}
+header .headerRight ul.social li a.facebook i {
+  top: 52%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+}
+header .headerRight ul.social li a.facebook:hover {
+  background-color: #3B5998;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/*--------------------------------------------------------------
+# Menu
+--------------------------------------------------------------*/
+@media screen and (max-width : 992px) {
+  .navbar-collapse{
+    background: #fff;
+    right: 0px;
+    position: fixed;
+    top: 55px;
+    width: 260px;
+    height: 100vh;
+    transition: all 0.5s;
+    -webkit-box-shadow: 0px 6px 5px 0px #000;
+    -moz-box-shadow: 0px 6px 5px 0px #000;
+    box-shadow: 0px 6px 5px 0px #000;
+    z-index: 9;
+  }
+  .collapse:not(.show) {
+    right: -263px;
+    display: block;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*--------------------------------------------------------------
+# Mapa
+--------------------------------------------------------------*/
+.MapContainer {
+  height: 900px;
 }
